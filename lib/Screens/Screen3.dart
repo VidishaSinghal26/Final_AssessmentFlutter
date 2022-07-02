@@ -4,16 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class Screen3 extends StatefulWidget {
-  String? Name;
+class Screen3 extends StatelessWidget {
   DateTime todayDate = DateTime.now();
-   Screen3({Key? key,required this.Name}) : super(key: key);
-
-  @override
-  State<Screen3> createState() => _Screen3State();
-}
-
-class _Screen3State extends State<Screen3> {
+  var Name = '';
+  Screen3({Key? key, required this.Name}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     
